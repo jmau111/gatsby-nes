@@ -38,13 +38,13 @@ npm run typecheck
 
 ## 🎃 Change styles
 
-If you know what you're doing, you can tweak stylews in `./src/styles`. The theme does not use styled components but basic SASS that I hook (~ add) in `./gatsby-browser.js`.
+If you know what you're doing, you can tweak stylews in `./src/styles`. The theme does not use styled components but basic SASS that I hook (~ add) in `./gatsby-browser.ts`.
 
 Don't remove `import "nes.css/css/nes.min.css";`. Otherwise, you would lose the import of NES.css.
 
 ## Change siteURL
 
-Open `./gatsby-config.js` and modify:
+Open `./gatsby-config.ts` and modify:
 
 ```js
   pathPrefix: `/gatsby-nes`,
@@ -57,7 +57,7 @@ Open `./gatsby-config.js` and modify:
   },
 ```
 
-I use pathPrefix because I host the demo in a subfolder, but you don't have to use this parameter if your production URL is a root URL. 
+I use pathPrefix because I host the demo in a subfolder, but **you don't have to use this parameter if your production URL is a root URL**. 
 
 For more advanced users, there's the dotenv module, but it's not configured yet.
 

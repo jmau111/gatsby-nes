@@ -1,4 +1,5 @@
 {
+  "license": "MIT",
   "name": "gatsby-nes",
   "version": "1.0.0",
   "description": "A theme built with Typescript, Gatsby, and NES.css",
@@ -12,7 +13,7 @@
     "dev": "gatsby develop",
     "cleandev": "gatsby clean && gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"

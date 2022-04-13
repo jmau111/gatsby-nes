@@ -1,8 +1,8 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix = `/gatsby-nes`,
   siteMetadata: {
-    pathPrefix: `/gatsby-nes`,
     title: `Gatsby NES`,
     siteUrl: `https://demos.julien-maury.dev`,
     description: `powered by NES.CSS`,
