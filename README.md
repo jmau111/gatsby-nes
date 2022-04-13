@@ -59,8 +59,6 @@ Open `./gatsby-config.ts` and modify:
 
 I use `pathPrefix` because I host the demo in a subfolder, but **you don't have to use this parameter if your production URL is a root URL**. 
 
-For more advanced users, there's the dotenv module, but it's not configured yet.
-
 ## Google Analytics
 
 If you need google, add the plugin:
