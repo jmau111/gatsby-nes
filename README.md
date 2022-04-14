@@ -123,12 +123,6 @@ This theme is barebone (on purpose). It's meant for One-page Layouts, not blogs 
 
     To get started, check out the guide to [getting started with using multiple themes](https://github.com/jmau111/gatsby-nes), or the [general themes docs](https://gatsbyjs.com/docs/themes).
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-theme)
-
 ## About Preact
 
 The theme uses [Preact](https://preactjs.com/), a much lighter alternative of React. Most gatsby websites and plugins will work fine, but some of them might be incompatible with it.
