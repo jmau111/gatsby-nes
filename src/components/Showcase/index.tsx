@@ -1,8 +1,9 @@
-import * as React from "react"
+import * as React from "react";
 
 type SectionProps = {
-  className?: string,
-  title?: string,
+  className?: string;
+  title?: string;
+  children?: React.ReactNode;
 }
 
 const Section: React.FunctionComponent<SectionProps> = ({
@@ -11,10 +12,10 @@ const Section: React.FunctionComponent<SectionProps> = ({
     className
 }) => {
 
-  const customClasses = ["nes-container with-title",]
+  const customClasses = ["nes-container with-title",];
 
   if (className) {
-    customClasses.push(className)
+    customClasses.push(className);
   }
 
   return (
@@ -22,7 +23,7 @@ const Section: React.FunctionComponent<SectionProps> = ({
       <h2 className="title">{title}</h2> 
     	{children}
     </section>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

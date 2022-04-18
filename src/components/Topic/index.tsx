@@ -1,8 +1,9 @@
-import * as React from "react"
+import * as React from "react";
 
 type TopicProps = {
-  className?: string,
-  title?: string,
+  className?: string;
+  title?: string;
+  children?: React.ReactNode;
 }
 
 const Topic: React.FunctionComponent<TopicProps> = ({
@@ -11,10 +12,10 @@ const Topic: React.FunctionComponent<TopicProps> = ({
     className
 }) => {
 
-  const customClasses = ["topic",]
+  const customClasses = ["topic",];
 
   if (className) {
-    customClasses.push(className)
+    customClasses.push(className);
   }
 
   return (
@@ -24,8 +25,7 @@ const Topic: React.FunctionComponent<TopicProps> = ({
       }
 	    {children}
 	</section>
-  )
-}
+  );
+};
 
-export default Topic
-
+export default Topic;

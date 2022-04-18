@@ -1,7 +1,8 @@
-import * as React from "react"
+import * as React from "react";
 
 type IconListProps = {
-  className?: string
+  className?: string;
+  children?: React.ReactNode;
 }
 
 const IconList: React.FunctionComponent<IconListProps> = ({
@@ -9,17 +10,17 @@ const IconList: React.FunctionComponent<IconListProps> = ({
     className
 }) => {
 
-  const customClasses = ["icon-list",]
+  const customClasses = ["icon-list",];
 
   if (className) {
-    customClasses.push(className)
+    customClasses.push(className);
   }
 
   return (
     <div className={customClasses.join(" ")}>
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default IconList
+export default IconList;

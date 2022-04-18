@@ -1,13 +1,13 @@
-import React from "react"
-import Helmet from "react-helmet"
+import React from "react";
+import Helmet from "react-helmet";
 
 type SEOProps = {
-  description?: string
-  lang?: string
-  author?: string
-  meta?: any
-  keywords?: any
-  title: string
+  description?: string;
+  lang?: string;
+  author?: string;
+  meta?: any;
+  keywords?: any;
+  title: string;
 }
 
 const SEO: React.FunctionComponent<SEOProps> = ({
@@ -19,7 +19,7 @@ const SEO: React.FunctionComponent<SEOProps> = ({
   title,
 }) => {
 
-  const metaDescription = description || description
+  const metaDescription = description || description;
 
   return (
     <Helmet
@@ -72,14 +72,14 @@ const SEO: React.FunctionComponent<SEOProps> = ({
         )
         .concat(meta)}
     />
-  )
-}
+  );
+};
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
   description: ``,
-}
+};
 
-export default SEO
+export default SEO;

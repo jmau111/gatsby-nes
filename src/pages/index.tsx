@@ -1,13 +1,13 @@
-import * as React from "react"
-import { graphql } from "gatsby"
+import * as React from "react";
+import {graphql} from "gatsby";
 
-import type { PageProps } from "gatsby";
+import type {PageProps} from "gatsby";
 
-import Layout from "../components/Layout"
-import Seo from "../components/Seo"
-import Topic from "../components/Topic"
-import Showcase from "../components/Showcase"
-import IconList from "../components/IconList"
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import Topic from "../components/Topic";
+import Showcase from "../components/Showcase";
+import IconList from "../components/IconList";
 
 type DataProps = {
   site: {
@@ -32,7 +32,7 @@ const links = [
     description:
       "Go grab some info on the official GitHub repository",
   },
-]
+];
 
 const listNintendo = [
   "mario",
@@ -42,7 +42,7 @@ const listNintendo = [
   "bulbasaur",
   "charmander",
   "squirtle",
-]
+];
 
 const listSns = [
   "twitter",
@@ -57,9 +57,9 @@ const listSns = [
   "youtube",
   "reddit",
   "whatsapp",
-]
+];
 
-const IndexPage = ({ data: { site } }: PageProps<DataProps>) => {
+const IndexPage = ({data: {site}}: PageProps<DataProps>) => {
   return (
     <Layout
         title={site.siteMetadata.title}
@@ -117,10 +117,10 @@ const IndexPage = ({ data: { site } }: PageProps<DataProps>) => {
         </ul>
       </Showcase>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const query = graphql`
   {
@@ -132,4 +132,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

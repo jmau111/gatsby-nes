@@ -1,20 +1,18 @@
-import * as React from "react"
+import * as React from "react";
 
-import type { PageProps } from "gatsby";
-
-import Social from "../Social"
+import Social from "../Social";
 
 type LayoutProps = {
-  className?: string
-  title?: string
-  description?: string
+  className?: string;
+  title?: string;
+  description?: string;
+  children?: React.ReactNode;
 }
 
 const Layout: React.FunctionComponent<LayoutProps> = ({
     children,
     title,
     description,
-    className
 }) => {
   return (
     <>
@@ -39,7 +37,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
         &copy; {new Date().getFullYear()}{" "}{title}
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

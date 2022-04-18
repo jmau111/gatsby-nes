@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 const sns = [
   {
@@ -21,7 +21,7 @@ const sns = [
     icon: "github",
     url: "https://github.com/jmau111/gatsby-nes",
   },
-]      
+]; 
 
 const Social = () => {
   return(
@@ -35,7 +35,7 @@ const Social = () => {
       ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Social
+export default Social;

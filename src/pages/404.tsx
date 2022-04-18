@@ -1,8 +1,8 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import {Link} from "gatsby";
 
-import Seo from "../components/Seo"
-import Topic from "../components/Topic"
+import Seo from "../components/Seo";
+import Topic from "../components/Topic";
 
 const NotFoundPage = () => {
   return (
@@ -32,7 +32,7 @@ const NotFoundPage = () => {
         </p>
       </Topic>
     </main>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
