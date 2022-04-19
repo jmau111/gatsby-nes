@@ -9,10 +9,6 @@ import Topic from "../components/Topic"
 import Showcase from "../components/Showcase"
 import IconList from "../components/IconList"
 
-import "nes.css/css/nes.min.css"
-import "../styles/reset.css"
-import "../styles/styles.scss"
-
 type DataProps = {
   site: {
     siteMetadata: {

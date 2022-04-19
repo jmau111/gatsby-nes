@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Social from "../Social"
 
-import "nes.css/css/nes.min.css"
+import "../../styles/nes.min.css"
 import "../../styles/reset.css"
 import "../../styles/styles.scss"
 
