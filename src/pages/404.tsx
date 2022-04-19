@@ -1,12 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Topic from "../components/Topic"
 
 const NotFoundPage = () => {
   return (
-    <main aria-labelledby="title">
+    <Layout withHeader={false}>
       <Seo title="Page not found" description="error 404" />
       <Topic className="404">
         <h1>Page not found</h1>
@@ -30,7 +31,7 @@ const NotFoundPage = () => {
           </Link>
         </p>
       </Topic>
-    </main>
+    </Layout>
   )
 }
 

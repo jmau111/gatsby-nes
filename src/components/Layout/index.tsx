@@ -2,28 +2,35 @@ import * as React from "react"
 
 import Social from "../Social"
 
+import "nes.css/css/nes.min.css"
+import "../../styles/reset.css"
+import "../../styles/styles.scss"
+
 type LayoutProps = {
+  withHeader?: boolean
   title?: string
   description?: string
   children?: React.ReactNode
 }
 
-const Layout: React.FunctionComponent<LayoutProps> = ({ children, title, description }) => {
+const Layout: React.FunctionComponent<LayoutProps> = ({ children, title, description, withHeader = true }) => {
   return (
     <>
-      <header className="header">
-        <div className="inner">
-          <div className="nav-brand">
-            <a href="/">
-              <h1 id="title">
-                <i aria-hidden="true" className="snes-jp-logo brand-logo"></i> {title}
-              </h1>
-            </a>
-            <p className="description">{description}</p>
+      {withHeader && (
+        <header className="header">
+          <div className="inner">
+            <div className="nav-brand">
+              <a href="/">
+                <h1 id="title">
+                  <i aria-hidden="true" className="snes-jp-logo brand-logo"></i> {title}
+                </h1>
+              </a>
+              <p className="description">{description}</p>
+            </div>
+            <Social />
           </div>
-          <Social />
-        </div>
-      </header>
+        </header>
+      )}
       <main aria-labelledby="title">{children}</main>
       <footer className="footer">
         &copy; {new Date().getFullYear()} {title}

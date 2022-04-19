@@ -38,9 +38,9 @@ npm run typecheck
 
 ## 🎃 Change styles
 
-If you know what you're doing, you can tweak stylews in `./src/styles`. The theme does not use styled components but basic SASS that I hook (~ add) in `./gatsby-browser.ts`.
+If you know what you're doing, you can tweak stylews in `./src/styles`. The theme does not use styled components but basic SASS.
 
-Don't remove `import "nes.css/css/nes.min.css";`. Otherwise, you would lose the import of NES.css.
+Don't remove `import "nes.css/css/nes.min.css";` I add in the main Layout  `./src/components/Layout/index.tsx`. Otherwise, you would lose the import of NES.css.
 
 ## Change siteURL
 
