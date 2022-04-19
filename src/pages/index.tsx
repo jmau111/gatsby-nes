@@ -1,7 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-import type { PageProps } from "gatsby";
+import type { PageProps } from "gatsby"
 
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
@@ -21,57 +21,46 @@ type DataProps = {
 
 const links = [
   {
-    text: "Getting started with NES.css",
-    url: "https://nostalgic-css.github.io/NES.css/",
-    description:
-      "There's more here. Go check the official demo for the Framework.",
+    text: `Getting started with NES.css`,
+    url: `https://nostalgic-css.github.io/NES.css/`,
+    description: `There's more here. Go check the official demo for the Framework.`,
   },
   {
-    text: "GitHub repo",
-    url: "https://github.com/nostalgic-css/NES.css",
-    description:
-      "Go grab some info on the official GitHub repository",
+    text: `GitHub repo`,
+    url: `https://github.com/nostalgic-css/NES.css`,
+    description: `Go grab some info on the official GitHub repository`,
   },
 ]
 
-const listNintendo = [
-  "mario",
-  "ash",
-  "pokeball",
-  "kirby",
-  "bulbasaur",
-  "charmander",
-  "squirtle",
-]
+const listNintendo = [`mario`, `ash`, `pokeball`, `kirby`, `bulbasaur`, `charmander`, `squirtle`]
 
 const listSns = [
-  "twitter",
-  "facebook",
-  "instagram",
-  "github",
-  "google",
-  "gmail",
-  "medium",
-  "linkedin",
-  "twitch",
-  "youtube",
-  "reddit",
-  "whatsapp",
+  `twitter`,
+  `facebook`,
+  `instagram`,
+  `github`,
+  `google`,
+  `gmail`,
+  `medium`,
+  `linkedin`,
+  `twitch`,
+  `youtube`,
+  `reddit`,
+  `whatsapp`,
 ]
 
 const IndexPage = ({ data: { site } }: PageProps<DataProps>) => {
   return (
-    <Layout
-        title={site.siteMetadata.title}
-        description={site.siteMetadata.description}
-      >
+    <Layout title={site.siteMetadata.title} description={site.siteMetadata.description}>
       <Seo
         title={site.siteMetadata.title}
         description={site.siteMetadata.description}
         author={site.siteMetadata.author}
       />
       <Topic title="About" className="about">
-        <p>Small demo using Gatsby and NES.css, <br />a NES-style (8bit-like) CSS Framework.</p>
+        <p>
+          Small demo using Gatsby and NES.css, <br />a NES-style (8bit-like) CSS Framework.
+        </p>
       </Topic>
       <Showcase title="Nintendo characters">
         <IconList>
@@ -80,8 +69,9 @@ const IndexPage = ({ data: { site } }: PageProps<DataProps>) => {
           ))}
         </IconList>
         <p className="note nes-text is-error">
-          Nintendo owns the copyright of these characters. Please comply with the Nintendo guidelines and laws of the applicable jurisdiction.
-        </p> 
+          Nintendo owns the copyright of these characters. Please comply with the Nintendo guidelines and laws of the
+          applicable jurisdiction.
+        </p>
       </Showcase>
       <Showcase title="Icons - misc">
         <IconList>
@@ -104,15 +94,15 @@ const IndexPage = ({ data: { site } }: PageProps<DataProps>) => {
       </Showcase>
       <Showcase title="Some links">
         <ul>
-        {links.map(link => (
-          <li key={link.url}>
-            <span>
-              <a href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter-ts`}>
-                {link.text}
-              </a>
-              <p>{link.description}</p>
-            </span>
-          </li>
+          {links.map(link => (
+            <li key={link.url}>
+              <span>
+                <a href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter-ts`}>
+                  {link.text}
+                </a>
+                <p>{link.description}</p>
+              </span>
+            </li>
           ))}
         </ul>
       </Showcase>
