@@ -9,7 +9,7 @@
     "module": "esnext",
     "lib": [
       "dom",
-      "es2017"
+      "esnext"
     ],
     "jsx": "react",
     "strict": true,
