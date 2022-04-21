@@ -6,18 +6,21 @@
   display: revert;
 }
 
+/* stylelint-disable */
 /* Preferred box-sizing value */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+/* stylelint-enable */
 
 /*
   Remove list styles (bullets/numbers)
   in case you use it with normalize.css
 */
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 

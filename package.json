@@ -16,7 +16,9 @@
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js,.jsx",
+    "lint:js": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js,.jsx --fix",
+    "lint:css": "stylelint 'src/**/*.{css,scss,sass}' --custom-syntax --fix",
+    "lint:all": "npm run lint:js && npm run lint:css",
     "type-check": "tsc --noEmit",
     "postinstall": "husky install",
     "prepack": "pinst --disable",
@@ -55,6 +57,11 @@
     "husky": "^7.0.4",
     "pinst": "^3.0.0",
     "prettier": "2.6.2",
+    "stylelint": "^14.7.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-prettier": "^2.0.0",
     "typescript": "^4.6.3"
   }
 }
