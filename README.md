@@ -78,6 +78,8 @@ Then, add the entry in `./gatsby-config.js`:
     },
 ```
 
+Also consider alternatives such as [Gatsby Matomo](https://www.gatsbyjs.com/plugins/gatsby-plugin-matomo/) instead.
+
 ## humans.txt
 
 We are humans, not machines. The humans.txt file is a tribute to the people who have contributed to the building of a website.
