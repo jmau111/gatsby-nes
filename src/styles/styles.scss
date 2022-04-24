@@ -75,6 +75,10 @@
     U+FFFD;
 }
 
+:root {
+  --top-offset: 235px;
+}
+
 body {
   font-family:
     "Press Start 2P",
@@ -105,8 +109,8 @@ body {
   padding: 1.5rem;
 }
 
-a {
-  scroll-margin-top: 72px;
+h1, h2, h3 {
+  scroll-margin-top: calc(72px + 2rem + var(--top-offset));
 }
 
 .header {
@@ -150,7 +154,7 @@ a {
 
 main {
   @media screen and (min-width: 768px) {
-    margin: 235px auto 1rem;
+    margin: var(--top-offset) auto 1rem;
     max-width: 768px;
   }
 }
