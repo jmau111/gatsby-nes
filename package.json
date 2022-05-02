@@ -43,7 +43,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/eslint-parser": "^7.17.0",
-    "@types/node": "^17.0.23",
+    "@types/node": "^17.0.31",
     "@types/react": "^17.0.44",
     "@types/react-dom": "^17.0.15",
     "@types/react-helmet": "^6.1.5",
