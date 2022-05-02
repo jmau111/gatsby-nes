@@ -23,7 +23,7 @@ This theme is only a nostalgic tribute to Nintendo. It's easy to customize it bu
 ## 🌪 Starting NES
 
 ```
-git clone https://github.com/jmau111/gatsby-nes.git and cd gatsby-nes && npm install && npm run dev
+git clone https://github.com/jmau111/gatsby-nes.git and cd gatsby-nes && yarn && yarn dev
 ```
 
 Then customize the favicon in `./images/`.
@@ -33,7 +33,7 @@ Then customize the favicon in `./images/`.
 As the idea with TypeScript is to type, there's a command for that:
 
 ```
-npm run typecheck
+yarn typecheck
 ```
 
 ## 🎃 Change styles
@@ -90,7 +90,7 @@ Go modify `./static/humans.txt` with your team info.
 If you have some issues with static images and queries, you might save a lot of time by using the custom yarn command:
 
 ```
-npm run cleandev
+yarn cleandev
 ``` 
 
 It will execute `gatsby clean` before `gatsby develop`, which deletes the cache folder and ensures there's no outdated stuff that can jam your app.
@@ -116,7 +116,7 @@ This theme is barebone (on purpose). It's meant for One-page Layouts, not blogs 
 
     ```shell
     cd my-themed-site/
-    npm run dev
+    yarn dev
     ```
 
 3.  **Open the code and start customizing!**

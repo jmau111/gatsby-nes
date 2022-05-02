@@ -109,7 +109,9 @@ body {
   padding: 1.5rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   scroll-margin-top: calc(72px + 2rem + var(--top-offset));
 }
 

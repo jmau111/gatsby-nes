@@ -11,7 +11,6 @@ const config: GatsbyConfig = {
   plugins: [
     `gatsby-plugin-preact`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,

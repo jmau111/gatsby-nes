@@ -5,6 +5,6 @@
     "stylelint-config-standard-scss"
   ],
   "ignoreFiles": [
-      "./src/styles/nes.min.css"
+    "./src/styles/nes.min.css"
   ]
 }
