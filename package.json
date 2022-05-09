@@ -55,7 +55,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "pinst": "^3.0.0",
     "prettier": "2.6.2",
     "react-native": "^0.68.1",
